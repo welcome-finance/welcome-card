@@ -29,7 +29,7 @@ import mssgBoxTwo from '../assets/img/message-box-1.svg'
 export default function Home() {
     return (
         <div className='App'>
-            <Container className='header row'>
+            <div className='header row'>
                 <div className='col-md-3 h-logo h-text justify-content-start'>
                     Welcome card
                 </div>
@@ -45,7 +45,7 @@ export default function Home() {
                 <div className='col-md-3 d-flex justify-content-end' >
                     <Button className='h-button'>Join waitlist</Button>
                 </div>
-            </Container>
+            </div>
 
             <div className='section'>
 

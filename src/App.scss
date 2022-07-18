@@ -66,8 +66,7 @@
 
 @font-face {
     font-family: "Inter-Bold";
-    src: url("./assets/fonts/Inter-Bold.woff") format("woff"), 
-    url("./assets/fonts/Inter-Bold.ttf") format("truetype");
+    src: url("./assets/fonts/Inter-Bold.woff") format("woff"), url("./assets/fonts/Inter-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -108,7 +107,7 @@ p {
         text-align: center;
         font-family: "Montserrat-Bold", Arial;
         color: rgba(112, 112, 112, 1);
-        font-size: 14px;
+        font-size: 1.8vh;
         font-style: normal;
         white-space: pre;
     }
@@ -117,7 +116,7 @@ p {
         text-align: center;
 
         font-family: "Montserrat-SemiBold";
-        font-size: 12px;
+        font-size: 1.5vh;
         font-style: normal;
         color: rgb(255, 255, 255);
 
@@ -125,65 +124,65 @@ p {
         background: rgb(255, 100, 2);
         background: linear-gradient(90deg, rgba(255, 100, 2, 1) 0%, rgba(254, 186, 107, 1) 100%);
         border: none;
-        padding: 0.375rem 0.75rem;
+        padding: 1rem 1rem;
         border-radius: 8px;
         box-shadow: 0px 5px 20px #ff531360;
-        width: 100px;
-        height: 40px;
+        width: 6.5vw;
+        height: auto;
     }
 }
 
 .section {
-    max-height: 125vh;
+    // max-height: 125vh;
 
     .blurOne-div {
         z-index: -100;
         position: absolute;
-        right: -450px;
-        top: 300px;
+        right: -30vw;
+        top: 39vh;
     }
 
     .blurOne {
-        max-width: 1000px;
+        max-width: 65vw;
     }
 
     .blurTwo-div {
         z-index: -100;
         position: absolute;
-        left: -450px;
-        top: 700px;
+        left: -30vw;
+        top: 92vh;
     }
 
     .blurTwo {
-        max-width: 1000px;
+        max-width: 65vw;
     }
 
     .blurThree-div {
         z-index: -100;
         position: absolute;
-        right: -450px;
-        top: 1200px;
+        right: -30vw;
+        top: 158vh;
     }
 
     .blurFour1-div {
         z-index: -100;
         position: absolute;
-        right: -450px;
-        top: 1500px;
+        right: -30vw;
+        top: 197.36vh;
     }
 
     .blurFour-div {
         z-index: -100;
         position: absolute;
-        left: -450px;
-        top: 2000px;
+        left: -30vw;
+        top: 263.15vh;
     }
 
     .blurFive-div {
         z-index: -100;
         position: absolute;
-        right: -450px;
-        top: 2500px;
+        right: -30vw;
+        top: 328.95vh;
     }
 }
 
@@ -201,11 +200,11 @@ p {
         justify-self: flex-end;
         align-self: flex-end;
         bottom: 0;
-        width: 564px;
+        width: 36.7vw;
         margin: auto;
         left: 0;
         right: 0;
-        text-align: center;
+        text-align: right;
     }
 
     // .body-text-main {
@@ -215,8 +214,8 @@ p {
         text-align: left;
         letter-spacing: 0px;
         color: rgba(54, 48, 78, 1);
-        font-size: 65px;
-        line-height: 65px;
+        font-size: 4.23vw;
+        line-height: 4.23vw;
         font-family: "Montserrat-Bold", Montserrat;
         white-space: pre;
     }
@@ -225,19 +224,18 @@ p {
         text-align: left;
         letter-spacing: 0px;
         color: rgba(54, 48, 78, 1);
-        font-size: 65px;
+        font-size: 4.23vw;
         font-family: "Montserrat-Bold", Montserrat;
         white-space: pre;
     }
 
     .body-text-desc {
-        max-width: 100px;
-        inline-size: 150px;
+        max-width: auto;
     }
 
     .btd-text1 {
-        max-width: 600px;
-        inline-size: 600px;
+        // max-width: 54.5rem;
+        inline-size: 90%;
         overflow-wrap: break-word;
         overflow: wrap;
         position: relative;
@@ -779,4 +777,135 @@ p {
         justify-content: space-around;
         align-items: center;
     }
+}
+
+@media only screen and (max-width: 900px) {
+    .header {
+        .h-button {
+            text-align: center;
+
+            font-family: "Montserrat-SemiBold";
+            font-size: 1.5vh;
+            width: 100px;
+            height: auto;
+        }
+    }
+
+    .section-1 {
+        .btm-text1 {
+            text-align: left;
+            font-size: 4.23vw;
+            line-height: 4.23vw;
+        }
+
+        .btm-text2 {
+            text-align: left;
+            font-size: 4.23vw;
+        }
+
+        .btd-text1 {
+            // max-width: 54.5rem;
+            inline-size: 90%;
+            text-align: left;
+            letter-spacing: 0px;
+            font-size: 1rem;
+        }
+
+        .body-buttons {
+            padding: 20px 0px 20px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 325px;
+        }
+
+        .bodyOne {
+            justify-self: flex-end;
+            align-self: flex-end;
+            bottom: 0;
+            // width: 36.7vw;
+            min-width: 400px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            text-align: right;
+        }
+    }
+
+    .section-2 {
+        .pin-icon {
+            max-width: 105px;
+            position: absolute;
+            top: 105px;
+            left: 75px;
+        }
+
+        .integration-glass {
+            position: absolute;
+            padding: 35px;
+            top: 0;
+            right: -9.76vw;
+            width: 84vw;
+            height: 450px;
+            border-radius: 75px;
+        }
+
+        
+        .int-text1 {
+            text-align: left;
+            font-size: 3.5vw;
+            line-height: 3.5vw;
+            padding: 20px 0px 0px 0px;
+        }
+
+        .int-text-desc {
+            padding: 20px 0px 20px 0px;
+            max-width: 85%;
+            inline-size: 85%;
+            overflow-wrap: break-word;
+            overflow: wrap;
+            position: relative;
+            text-align: left;
+            letter-spacing: 0px;
+            color: rgba(54, 48, 78, 1);
+            font-size: 1.17vw;
+            font-family: Montserrat-Medium, Montserrat;
+        }
+
+        .int-texts {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+    }
+
+    .grad-button {
+        text-align: center;
+        font-size: 12px;
+        padding: 0.375rem 0.75rem;
+        border-radius: 8px;
+        width: 150px;
+        height: 40px;
+
+        .arrowIcon {
+            width: 15px;
+        }
+    }
+
+    .clear-button {
+        font-size: 12px;
+        width: 150px;
+        height: 40px;
+
+        padding: 0.375rem 0.75rem;
+        border-radius: 8px;
+
+        .icon {
+            width: 15px;
+        }
+    }
+}
+
+@media only screen and (max-width: 765px) {
 }
