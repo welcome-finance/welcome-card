@@ -621,7 +621,7 @@ function App() {
                     <img src={cardImage} className="action-icon action-icon--share" aria-hidden="true" alt="card img" onLoad={() => setLoad()} />
                     <h3 className="action-title"> Get a card</h3>
                     <p className="action-about">
-                      Gain access to various cards for different currencies.
+                      Have access to your funds in local currency.
                     </p>
                   </div>
                 </ScrollAnimation>
