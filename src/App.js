@@ -53,7 +53,7 @@ function App() {
     {
       title: 'Limitless possibilities when you travel',
       description:
-        'Enjoy the flexibility to make numerous payments online and in stores in countries where Welcome is present. Not to worry, we are constantly opening up new countries.',
+        'Enjoy the flexibility to make numerous payments online and in stores in countries where Welcome card is present. Not to worry, we are constantly opening up new countries.',
       image: slide4,
     },
     {
@@ -184,7 +184,7 @@ function App() {
               {/* End of mobile navigation */}
             </nav>
           </div>
-          <Slider className="slider-wrapper">
+          <Slider autoplay={5000} className="slider-wrapper">
             {content.map((item, index) => (
               <div
                 key={index}
@@ -663,7 +663,7 @@ function App() {
             </div>
           </ScrollAnimation>
           <div className='faq-item'>
-            <button className={`accordion ${step1 ? "acctive" : ""}`} onClick={() => setSteps({ ...steps, step1: !step1 })}>
+            <button className={`accordion ${step1 ? "active" : ""}`} onClick={() => setSteps({ ...steps, step1: !step1 })}>
               <div>
                 <p>Can I order a card before traveling to my new destination country?</p>
 
@@ -671,98 +671,89 @@ function App() {
               </div>
             </button>
             <div className="panel animated fadeInDown" style={{ display: step1 ? "block" : "none" }}>
-              <p>
                 No, the card is waiting for you at your destination country. Lookout for a Welcome Card kiosk to register and fund your card.
-              </p>
+              
             </div>
           </div>
           <div className='faq-item'>
-            <button className={`accordion ${step2 ? "acctive" : ""}`} onClick={() => setSteps({ ...steps, step2: !step2 })}>
+            <button className={`accordion ${step2 ? "active" : ""}`} onClick={() => setSteps({ ...steps, step2: !step2 })}>
               <div>
                 <p>How can I manage my card?
                 </p>
                 <img src={!step2 ? arrR : arrD} />
               </div></button>
-            <div className="panel animated fadeInDown" style={{ display: step2 ? "block" : "none" }}>
-              <p>You can activate and block your Welcome card on the mobile App. You can also set PIN and reset PIN on the App. Kindly check the settings on the App.</p>
+            <div className="panel animated fadeInDown" style={{ display: step2 ? "block" : "none" }}>You can activate and block your Welcome card on the mobile App. You can also set PIN and reset PIN on the App. Kindly check the settings on the App.
             </div>
 
           </div>
           <div className='faq-item'>
-            <button className={`accordion ${step3 ? "acctive" : ""}`} onClick={() => setSteps({ ...steps, step3: !step3 })}>
+            <button className={`accordion ${step3 ? "active" : ""}`} onClick={() => setSteps({ ...steps, step3: !step3 })}>
               <div>
                 <p>Are there top-up limits?
                 </p>
                 <img src={!step3 ? arrR : arrD} />
               </div></button>
-            <div className="panel animated fadeInDown" style={{ display: step3 ? "block" : "none" }}>
-              <p>Topup is in line with anti-fraud limits per currency in destination country. For example, daily top up limit in the Uk is less than £10,000 and in the USA less than $10,000 or its equivalence.</p>
+            <div className="panel animated fadeInDown" style={{ display: step3 ? "block" : "none" }}>Topup is in line with anti-fraud limits per currency in destination country. For example, daily top up limit in the Uk is less than £10,000 and in the USA less than $10,000 or its equivalence.
             </div>
           </div>
           <div className='faq-item'>
-            <button className={`accordion ${step4 ? "acctive" : ""}`} onClick={() => setSteps({ ...steps, step4: !step4 })}>
+            <button className={`accordion ${step4 ? "active" : ""}`} onClick={() => setSteps({ ...steps, step4: !step4 })}>
               <div>
                 <p>Can I reuse my card after leaving my destination country?
                 </p>
                 <img src={!step4 ? arrR : arrD} />
               </div></button>
-            <div className="panel animated fadeInDown" style={{ display: step4 ? "block" : "none" }}>
-              <p>You will be able to reuse the card if the card is still funded and the card is still valid for use.</p>
+            <div className="panel animated fadeInDown" style={{ display: step4 ? "block" : "none" }}>You will be able to reuse the card if the card is still funded and the card is still valid for use.
             </div>
           </div>
           <div className='faq-item'>
-            <button className={`accordion ${step5 ? "acctive" : ""}`} onClick={() => setSteps({ ...steps, step5: !step5 })}>
+            <button className={`accordion ${step5 ? "active" : ""}`} onClick={() => setSteps({ ...steps, step5: !step5 })}>
               <div>
                 <p>How can I fund my card?
                 </p>
                 <img src={!step5 ? arrR : arrD} />
               </div></button>
-            <div className="panel animated fadeInDown" style={{ display: step5 ? "block" : "none" }}>
-              <p>You can fund your card at welcome card kiosk. We will be partnering with several outlets within cities to make funding closer to our users.</p>
+            <div className="panel animated fadeInDown" style={{ display: step5 ? "block" : "none" }}>You can fund your card at welcome card kiosk. We will be partnering with several outlets within cities to make funding closer to our users.
             </div>
           </div>
           <div className='faq-item'>
-            <button className={`accordion ${step6 ? "acctive" : ""}`} onClick={() => setSteps({ ...steps, step6: !step6 })}>
+            <button className={`accordion ${step6 ? "active" : ""}`} onClick={() => setSteps({ ...steps, step6: !step6 })}>
               <div>
                 <p>What happpens if I misplace my card?
                 </p>
                 <img src={!step6 ? arrR : arrD} />
               </div></button>
-            <div className="panel animated fadeInDown" style={{ display: step6 ? "block" : "none" }}>
-              <p>Go into the mobile app and block the card. This function will make the card inactive and keep you funds secured.</p>
+            <div className="panel animated fadeInDown" style={{ display: step6 ? "block" : "none" }}>Go into the mobile app and block the card. This function will make the card inactive and keep you funds secured.
             </div>
           </div>
           <div className='faq-item'>
-            <button className={`accordion ${step7 ? "acctive" : ""}`} onClick={() => setSteps({ ...steps, step7: !step7 })}>
+            <button className={`accordion ${step7 ? "active" : ""}`} onClick={() => setSteps({ ...steps, step7: !step7 })}>
               <div>
                 <p>How do I report issues?
                 </p>
                 <img src={!step7 ? arrR : arrD} />
               </div></button>
-            <div className="panel animated fadeInDown" style={{ display: step7 ? "block" : "none" }}>
-              <p>Go to the compliant section in the app to log any issue.</p>
+            <div className="panel animated fadeInDown" style={{ display: step7 ? "block" : "none" }}>Go to the compliant section in the app to log any issue.
             </div>
           </div>
           <div className='faq-item'>
-            <button className={`accordion ${step8 ? "acctive" : ""}`} onClick={() => setSteps({ ...steps, step8: !step8 })}>
+            <button className={`accordion ${step8 ? "active" : ""}`} onClick={() => setSteps({ ...steps, step8: !step8 })}>
               <div>
                 <p>What happens if I misplace or change my phone?
                 </p>
                 <img src={!step8 ? arrR : arrD} />
               </div></button>
-            <div className="panel animated fadeInDown" style={{ display: step8 ? "block" : "none" }}>
-              <p>Download the mobile app onto your new phone and log in with previous login details.Do note that the app on the previous phone will automatically become inactive,once you login on a new device.</p>
+            <div className="panel animated fadeInDown" style={{ display: step8 ? "block" : "none" }}>Download the mobile app onto your new phone and log in with previous login details.Do note that the app on the previous phone will automatically become inactive,once you login on a new device.
             </div>
           </div>
           <div className='faq-item'>
-            <button className={`accordion ${step9 ? "acctive" : ""}`} onClick={() => setSteps({ ...steps, step9: !step9 })}>
+            <button className={`accordion ${step9 ? "active" : ""}`} onClick={() => setSteps({ ...steps, step9: !step9 })}>
               <div>
                 <p>Is there a desktop version of the app?
                 </p>
                 <img src={!step9 ? arrR : arrD} />
               </div></button>
-            <div className="panel animated fadeInDown" style={{ display: step9 ? "block" : "none" }}>
-              <p>No.</p>
+            <div className="panel animated fadeInDown" style={{ display: step9 ? "block" : "none" }}>No.
             </div>
           </div>
         </section>

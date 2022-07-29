@@ -1885,7 +1885,6 @@ a {
   width: 80%;
   overflow-wrap: break-word;
   word-wrap: break-word;
-  word-break: break-all;
 }
 
 .active {
@@ -1907,6 +1906,9 @@ a {
   outline: none;
   transition: 0.5s;
   padding: 5rem 7.5rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  ;
 }
 
 .accordion div {
@@ -1918,6 +1920,15 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  overflow-wrap: break-word;
+
+  /* word-wrap: break-word;
+  ; */
+}
+
+.accordion {
+  inline-size: 85%;
+  overflow-wrap: break-word;
 }
 
 .accordion img {
@@ -1934,7 +1945,11 @@ a {
   width: 75%;
   background-color: #FFF8F1;
   overflow: hidden;
-  transition: 0.02s all ease;
+  transition: 0.02s;
+  inline-size: 75%;
+  overflow-wrap: break-word;
+  /*  
+  ; */
 }
 
 
@@ -1950,6 +1965,7 @@ a {
   .accordion, .panel {
     transition: 0.5s;
     width: 90%;
+    inline-size: 90%;
     padding: 3.5rem 2.5rem;
   }
 }
@@ -1964,6 +1980,7 @@ a {
   .accordion, .panel {
     transition: 0.5s;
     width: 90%;
+    inline-size: 90%;
     padding: 3.5rem 2.5rem;
   }
 }
