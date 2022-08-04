@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Slider from 'react-animated-slider';
 import ScrollAnimation from "react-animate-on-scroll";
+import { Link as Scroll } from 'react-scroll'
 import 'react-animated-slider/build/horizontal.css';
 import './slider.css';
 import './animate.css';
@@ -14,7 +15,7 @@ import slide1 from './assets/slide-1.jpg';
 import slide2 from './assets/slide-2.jpg';
 import slide3 from './assets/slide-3.jpg';
 import slide4 from './assets/slide-4.jpg';
-import slide5 from './assets/slide-5.jpg';
+import slide6 from './assets/slide-6.jpg';
 import arrR from './assets/arr-r.svg';
 import arrD from './assets/arr-d.svg';
 
@@ -36,7 +37,7 @@ function App() {
       title: 'Local cards for international Travels',
       description:
         'Perform all your transactions in a foreign country, using one card, and your mobile device. Worldwide service.',
-      image: slide1,
+      image: slide6,
     },
     {
       title: 'Travel, shop and pay, anywhere, anytime.',
@@ -60,7 +61,7 @@ function App() {
       title: 'Welcome Card',
       description:
         'Welcome To Your New Destination.',
-      image: slide5,
+      image: slide1,
     }
   ];
 
@@ -106,6 +107,7 @@ function App() {
           lineHeight: "initial"
         }} />
       </div>
+      
       :
 
       <div data-new-gr-c-s-check-loaded="14.1068.0" data-gr-ext-installed="">
@@ -208,7 +210,9 @@ function App() {
               </div>
             ))}
           </Slider>
-
+          <Scroll  className="arrow bounce" to={window.innerWidth < 1200 ?"wc-section" : "aud-web"} smooth={true}>
+            <div></div>
+          </Scroll>
           {/* Hero */}
           {/* end of Hero */}
 
@@ -243,7 +247,7 @@ function App() {
         {/* modal section ends */}
 
         {/* Audience web*/}
-        <section className="aud-web audience ">
+        <section id="aud-web" className="aud-web audience ">
           <div className="audience-inner">
             <div className="audience_info">
               {/* audience heading */}
@@ -399,7 +403,7 @@ function App() {
         {/* end of Audience */}
 
         {/* Welcome Card */}
-        <section className="gist">
+        <section id="wc-section" className="gist">
           <figure className="gist-inner">
             <ScrollAnimation
               animateOnce={true}
@@ -648,6 +652,8 @@ function App() {
         </section>
         {/* set up ends */}
 
+
+        {/* set up */}
         <section className="faq">
           <ScrollAnimation
             animateOnce={true}
@@ -671,8 +677,8 @@ function App() {
               </div>
             </button>
             <div className="panel animated fadeInDown" style={{ display: step1 ? "block" : "none" }}>
-                No, the card is waiting for you at your destination country. Lookout for a Welcome Card kiosk to register and fund your card.
-              
+              No, the card is waiting for you at your destination country. Lookout for a Welcome Card kiosk to register and fund your card.
+
             </div>
           </div>
           <div className='faq-item'>
@@ -757,6 +763,8 @@ function App() {
             </div>
           </div>
         </section>
+        {/* set up ends */}
+
         {/* Card section */}
         <ScrollAnimation
           animateOnce={true}
@@ -795,7 +803,6 @@ function App() {
             <a href="#" className="footer__list">Career</a>
           </div>
         </footer>
-        <script src="./assets/main.js" defer=""></script>
 
 
       </div >

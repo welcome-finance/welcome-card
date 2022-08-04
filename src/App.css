@@ -297,7 +297,7 @@ a {
 
   .header {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     position: relative;
   }
 
@@ -1756,6 +1756,7 @@ a {
     /* background-image: url("./assets/"); */
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+    background: #fff8f1;
   }
 
 }

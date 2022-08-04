@@ -242,13 +242,13 @@
   
   @media (max-height: 500px) {
     .slider-wrapper, .slide {
-      height: 80vh;
+      height: 90vh;
     }    
   }
   
   @media (max-width: 640px) {
     .slider-wrapper, .slide {
-      height: 80vh;
+      height: 90vh;
     }    
   }
   
